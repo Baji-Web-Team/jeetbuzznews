@@ -1,27 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+Link {
+  @apply text-xs
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.hover-effect {
+  @apply relative hover:bg-orange-400 hover:transition hover:duration-300 block p-3 h-full
+}
+
+
+
+/* Use @font-face to define the font family */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300; /* You can adjust the weight as needed */
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400; /* You can adjust the weight as needed */
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500; /* You can adjust the weight as needed */
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600; /* You can adjust the weight as needed */
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap') format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700; /* You can adjust the weight as needed */
+  src: url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap') format('woff2');
+}
+
+html, body {
+  font-family: 'Poppins', sans-serif;
 }
