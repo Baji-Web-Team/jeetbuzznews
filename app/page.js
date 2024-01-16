@@ -1,10 +1,17 @@
-import Head from "next/head"
+import Hero from "./homesectioncomponents/Hero";
+import LatestBlogs from "./homesectioncomponents/LatestBlogs";
+import MatchHiglights from "./homesectioncomponents/MatchHiglights";
+import Predictions from "./homesectioncomponents/Predictions";
+import Videos from "./homesectioncomponents/Videos";
 
 export default function Home() {
   return (
-    <>
-      <h1>This is the Home Page</h1>
-    
-    </>
+    <main className="container flex  md:flex-col">
+      <Hero />
+      <Predictions />
+      <Videos />
+      <MatchHiglights />
+      <LatestBlogs />
+    </main>
   )
 }
