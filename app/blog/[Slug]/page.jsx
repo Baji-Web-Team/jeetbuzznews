@@ -1,5 +1,9 @@
-export default function page() {
+import React from 'react'
+
+const page = () => {
   return (
-    <h1>this is a sample blog</h1>
+    <div>this is a sample blog page</div>
   )
 }
+
+export default page

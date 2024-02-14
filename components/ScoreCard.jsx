@@ -1,10 +1,8 @@
+import React from 'react'
+
 const ScoreCard = () => {
   return (
-    <>
-        <h1>
-            this is the live scorecard section
-        </h1>
-    </>
+    <div>ScoreCard</div>
   )
 }
 

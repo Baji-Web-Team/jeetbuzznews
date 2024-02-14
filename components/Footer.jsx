@@ -1,6 +1,7 @@
+"use client"
 import Link from "next/link";
 import Image from "next/image";
-
+import Head from "next/head";
 const Footer = () => {
   return (
     <footer className="bg-zinc-800 text-white py-8 sm:py-12">
@@ -114,8 +115,12 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      {/* Script tag for external widget.js file */}
+      
     </footer>
-  );
+    
+  )
 };
 
 export default Footer;
+
