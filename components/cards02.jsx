@@ -13,17 +13,18 @@ const Cards01 = ({ title, datePublished, publishedDuration, imagePath }) => {
           className="w-full"
           alt={title}
         />
+        
         <a href="#!">
           <div className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100 bg-[hsla(0,0%,98.4%,.15)]"></div>
         </a>
       </div>
+      <h3 className="mb-3 text-lg font-bold text-start text-heading1 dark:text-neutral-200">
+        {title}
+      </h3>
       <p className="mb-3 text-heading2 dark:text-neutral-200 text-start">
         <small>{datePublished} -</small>
         <small className="text-green1"> {publishedDuration}</small>
       </p>
-      <h3 className="mb-3 text-lg font-bold text-start text-heading1 dark:text-neutral-200">
-        {title}
-      </h3>
     </div>
   );
 };
