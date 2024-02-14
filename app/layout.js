@@ -3,7 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScoreCard from "@/components/ScoreCard";
-import { Providers } from "./providers";
+import { Providers } from "./Providers";
 
 const inter = Inter({ subsets: ["latin"] });
 
