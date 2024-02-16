@@ -2,7 +2,7 @@ import React from "react";
 
 const SideScore = () => {
   return (
-    <div classNameName="basis-1/3 flex flex-col self-stretch">
+    <div className="basis-1/3 flex flex-col top-0 bg-red-400">
       <div className="flex flex-col gap-6 items-start justify-start shrink-0 relative">
         <div className="bg-[#20201f] flex flex-col gap-0 items-start justify-start self-stretch shrink-0 relative overflow-hidden">
           <div className="bg-orange1 p-2.5 flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative overflow-hidden">
