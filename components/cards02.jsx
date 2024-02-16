@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Cards01 = ({ title, datePublished, publishedDuration, imagePath }) => {
+const Cards02 = ({ data }) => {
   return (
     <div className="mb-6 lg:mb-0">
       <div
@@ -9,9 +9,9 @@ const Cards01 = ({ title, datePublished, publishedDuration, imagePath }) => {
         data-te-ripple-color="light"
       >
         <img
-          src={imagePath}
+          src={data?.imagePath}
           className="w-full"
-          alt={title}
+          alt={data?.title}
         />
         
         <a href="#!">
@@ -19,14 +19,14 @@ const Cards01 = ({ title, datePublished, publishedDuration, imagePath }) => {
         </a>
       </div>
       <h3 className="mb-3 text-lg font-bold text-start text-heading1 dark:text-neutral-200">
-        {title}
+        {data?.title}
       </h3>
       <p className="mb-3 text-heading2 dark:text-neutral-200 text-start">
-        <small>{datePublished} -</small>
-        <small className="text-green1"> {publishedDuration}</small>
+        <small>{data?.datePublished} -</small>
+        <small className="text-green1"> {data?.publishedDuration}</small>
       </p>
     </div>
   );
 };
 
-export default Cards01;
+export default Cards02;

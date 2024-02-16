@@ -13,5 +13,5 @@ export default function Home() {
       <MatchHiglights />
       <LatestBlogs />
     </main>
-  )
+  );
 }

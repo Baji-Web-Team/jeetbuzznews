@@ -1,10 +1,10 @@
 import React from "react";
 import Cards from "@/components/cards02";
 import BlogsCont from "@/components/blogLatest"
-import { cardBlogs } from "@/constants";
+import { cardBlogs, blogsLatest  } from "@/constants";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
-import { blogsLatest } from "@/constants"
+import { } from "@/constants"
 
 
 const LatestBlogs = () => {
@@ -31,20 +31,13 @@ const LatestBlogs = () => {
           {/* Map through the cardData array and render Cards component for each item */}
           {cardBlogs.map((data) => (
             <Cards
-              key={data.id} // Provide a unique key for each card
-              title={data.title}
-              datePublished={data.datePublished}
-              publishedDuration={data.publishedDuration}
-              imagePath={data.imagePath}
+              data={data}
             />
           ))}
           <div className="self-stretch">
           {blogsLatest.map((data) => (
             <BlogsCont
-              key={data.id} // Provide a unique key for each card
-              title={data.title}
-              datePublished={data.datePublished}
-              publishedDuration={data.publishedDuration}
+              data={data}
             />
           ))}
           </div>

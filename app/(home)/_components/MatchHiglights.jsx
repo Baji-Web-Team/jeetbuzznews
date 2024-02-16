@@ -28,11 +28,7 @@ const MatchHiglights = () => {
           {/* Map through the cardData array and render Cards component for each item */}
           {cardDataMatch.map((data) => (
             <Cards
-              key={data.id} // Provide a unique key for each card
-              title={data.title}
-              datePublished={data.datePublished}
-              publishedDuration={data.publishedDuration}
-              imagePath={data.imagePath}
+              data={data}
             />
           ))}
         </div>

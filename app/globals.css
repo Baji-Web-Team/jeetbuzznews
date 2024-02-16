@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -17,7 +16,7 @@ Link {
 }
 
 .hover-effect {
-  @apply relative hover:bg-orange-400 hover:transition hover:duration-300 block p-3 h-full
+  @apply relative hover:bg-orange1 hover:transition hover:duration-300 block p-3 h-full
 }
 
 
