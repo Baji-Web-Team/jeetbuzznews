@@ -17,19 +17,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-    <head>
+    {/* <head>
     <script> var Entity_sport = []; </script>
-    </head>
+    </head> */}
 
       <body className={inter.className}>
         <Providers>     
-         <ScoreCardApi />
+         {/* <ScoreCardApi /> */}
           <ScoreCard />
           <Navbar />
           {children}
           <Footer />
         </Providers>
-        <script defer src="https://dashboard.entitysport.com/widget/assets/js/widget.js"></script>
+        {/* <script defer src="https://dashboard.entitysport.com/widget/assets/js/widget.js"></script> */}
       </body>
     </html>
   );

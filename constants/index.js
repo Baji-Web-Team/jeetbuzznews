@@ -120,8 +120,10 @@ export const cardData = [
       leagueName: "Lazy Dog",
       team1Name: "Fox",
       team1Score: "12",
+      team1BannerImg: "/team1.svg",
       team2Name: "Wolf",
       team2Score: "14",
+      team1BannerImg: "/team2.svg",
       liveUpdateCommentary: "The quick brown fox",
     },
     {
@@ -129,8 +131,10 @@ export const cardData = [
       leagueName: "Lazy Cat",
       team1Name: "Lion",
       team1Score: "10",
+      team1BannerImg: "/team1.svg",
       team2Name: "Tiger",
       team2Score: "11",
+      team1BannerImg: "/team2.svg",
       liveUpdateCommentary: "The quick brown Cat",
     },
     {
@@ -138,8 +142,10 @@ export const cardData = [
       leagueName: "Lazy Bird",
       team1Name: "Eagle",
       team1Score: "9",
+      team1BannerImg: "/team1.svg",
       team2Name: "Phoenix",
       team2Score: "8",
+      team1BannerImg: "/team2.svg",
       liveUpdateCommentary: "The quick brown Bird",
     },
     {
@@ -147,7 +153,9 @@ export const cardData = [
       leagueName: "Lazy Repty",
       team1Name: "Snake",
       team1Score: "7",
+      team1BannerImg: "/team1.svg",
       team2Name: "Alligator",
+      team1BannerImg: "/team2.svg",
       team2Score: "6",
       liveUpdateCommentary: "The quick brown Reptile",
     },
@@ -156,8 +164,10 @@ export const cardData = [
       leagueName: "Lazy Amphi",
       team1Name: "Frog",
       team1Score: "12",
+      team1BannerImg: "/team1.svg",
       team2Name: "Toad",
       team2Score: "12",
+      team1BannerImg: "/team2.svg",
       liveUpdateCommentary: "The quick brown Amphibian",
     },
   ];
@@ -239,5 +249,81 @@ export const predAll = [
     publishedDuration: "12 mins ago",
     imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
   },
+];
+
+export const blogsSingle = [
+  {
+    id: 1, 
+    title: "the quick brown fox jumps over the lazy dog",
+    datePublished: "December 11,2023",
+    publishedDuration: "12 mins ago",
+    imagePath: "https://images.pexels.com/photos/9828008/pexels-photo-9828008.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+];
+
+export const blogsAll = [
+{
+  id: 1, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+{
+  id: 2, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+{
+  id: 3, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+{
+  id: 4, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+{
+  id: 5, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+{
+  id: 6, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+{
+  id: 7, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+{
+  id: 8, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+{
+  id: 9, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
 ];
   

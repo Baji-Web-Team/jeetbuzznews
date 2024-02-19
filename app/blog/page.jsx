@@ -1,13 +1,26 @@
-import Head from "next/head"
+import React from "react";
+import BlogSection from "@/components/Blogs66";
+import Scores from "@/components/SideScore33";
+import WideAds from "@/components/WideAds";
+import { blogsAll, blogsSingle } from "@/constants";
 
-export default function page() {
+const Page = () => {
   return (
-    <>
-    <Head>
-        <title key="pagetitle">JeetBuzzNews Blogs</title>
-        <meta name="description" content="JeetbuzzNews - Blog Page" key="metadescription"/>
-    </Head>
-    <h1>this is the blog page</h1>
-    </>
-  )
-}
+    <main className="flex flex-col items-center min-h-screen">
+      <div className="container flex flex-col items-center mx-auto mt-12">
+        <div className="flex xl:flex-row md:flex-col flex-col items-center xl:gap-x-12 p-6">
+          <div>
+          <BlogSection title="Blogs" data={blogsSingle} />
+          <BlogSection title="Blogs" data={blogsAll} />
+          </div>
+          <Scores />
+        </div>
+        <div className="w-full items-center p-6">
+          <WideAds />
+        </div>
+      </div>
+    </main>
+  );
+};
+
+export default Page;

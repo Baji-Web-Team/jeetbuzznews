@@ -3,6 +3,7 @@ import Cards from "@/components/cards01";
 import { cardData } from "@/constants";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
+import WideAds from "@/components/WideAds";
 
 const Predictions = () => {
   return (
@@ -36,9 +37,7 @@ const Predictions = () => {
             />
           ))}
         </div>
-        <div className="mt-6 bg-green1 p-6">
-          <p className="text-center dark:text-neutral-200">Ads go here</p>
-        </div>
+        <WideAds />
       </section>
     </div>
   );
