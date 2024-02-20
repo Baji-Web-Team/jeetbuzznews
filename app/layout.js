@@ -6,6 +6,7 @@ import ScoreCard from '@/components/ScoreCard';
 import { Providers } from "./Providers";
 import Head from "next/head";
 import ScoreCardApi from "@/components/ScoreCardApi";
+import Navi from "@/components/Navi";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
          {/* <ScoreCardApi /> */}
           <ScoreCard />
           <Navbar />
+          <Navi />
           {children}
           <Footer />
         </Providers>

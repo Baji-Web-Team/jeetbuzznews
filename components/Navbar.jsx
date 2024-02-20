@@ -12,12 +12,12 @@ const Navbar = () => {
             <Image src="/jeetbuzzlogo.png" alt="logo" width={131} height={36} />
           </Link>
           <nav className="md:mr-auto  md:ml-4  md:pl-4 md:border-l md:border-gray-700 flex flex-wrap items-center justify-center text-base gap-7">
-            <Link href="/" className="text-white text-xs hover-effect">
+            <Link href="/" className="text-white text-xs hover-effect data-te-nav-item-ref data-te-nav-item-ref">
               Home
             </Link>
             <Link
               href="/predictions"
-              className="text-white text-xs hover-effect"
+              className="text-white text-xs hover-effect data-te-nav-item-ref"
             >
               Predictions
             </Link>
