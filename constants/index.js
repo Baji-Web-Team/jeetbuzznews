@@ -326,4 +326,156 @@ export const blogsAll = [
   imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
 },
 ];
+
+export const matchSingle = [
+  {
+    id: 1, 
+    title: "the quick brown fox jumps over the lazy dog",
+    datePublished: "December 11,2023",
+    publishedDuration: "12 mins ago",
+    imagePath: "https://images.pexels.com/photos/9828008/pexels-photo-9828008.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+];
+
+export const matchAll = [
+{
+  id: 1, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+{
+  id: 2, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+{
+  id: 3, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+{
+  id: 4, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+{
+  id: 5, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+{
+  id: 6, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+{
+  id: 7, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+{
+  id: 8, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+{
+  id: 9, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+];
+
+export const videosSingle = [
+  {
+    id: 1, 
+    title: "the quick brown fox jumps over the lazy dog",
+    datePublished: "December 11,2023",
+    publishedDuration: "12 mins ago",
+    imagePath: "https://images.pexels.com/photos/9828008/pexels-photo-9828008.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
+];
+
+export const videosAll = [
+{
+  id: 1, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+{
+  id: 2, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+{
+  id: 3, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+{
+  id: 4, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+{
+  id: 5, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+{
+  id: 6, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+{
+  id: 7, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+{
+  id: 8, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+{
+  id: 9, 
+  title: "the quick brown fox jumps over the lazy dog",
+  datePublished: "December 11,2023",
+  publishedDuration: "12 mins ago",
+  imagePath: "https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg",
+},
+];
   
