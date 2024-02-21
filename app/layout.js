@@ -1,12 +1,12 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-// import Navbar from "@/components/Navbar";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScoreCard from '@/components/ScoreCard';
 import { Providers } from "./Providers";
 import Head from "next/head";
 import ScoreCardApi from "@/components/ScoreCardApi";
-import Navi from "@/components/Navi";
+// import Navi from "@/components/Navi";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,8 +26,8 @@ export default function RootLayout({ children }) {
         <Providers>     
          {/* <ScoreCardApi /> */}
           <ScoreCard />
-          {/* <Navbar /> */}
-          <Navi />
+          <Navbar />
+          {/* <Navi /> */}
           {children}
           <Footer />
         </Providers>

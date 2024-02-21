@@ -9,7 +9,6 @@ import { AiOutlineMenu } from "react-icons/ai";
 
 const Navi = () => {
   useEffect(() => {
-    // Initialize Twilio Elements
     initTE({ Collapse, Dropdown });
   }, []);
 
