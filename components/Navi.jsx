@@ -190,6 +190,9 @@ const Navi = () => {
             data-te-dropdown-alignment="end"
           >
           <ThemeSwitch />
+          <ThemeSwitch />
+          <ThemeSwitch />
+          <ThemeSwitch />
           </div>
           
         </div>
