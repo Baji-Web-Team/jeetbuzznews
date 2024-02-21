@@ -5,7 +5,7 @@ import WideAds from "@/components/WideAds";
 import { blogsSingle, blogsAll } from "@/constants";
 
 const Page = () => {
-  const pageTitle = "Blogs"; // Set the title dynamically based on the page
+  const pageTitle = "Blogs"; 
 
   return (
     <main className="flex flex-col items-center min-h-screen">

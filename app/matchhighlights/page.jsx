@@ -5,7 +5,7 @@ import WideAds from "@/components/WideAds";
 import { matchSingle, matchAll } from "@/constants";
 
 const Page = () => {
-  const pageTitle = "Match Highlights"; // Set the title dynamically based on the page
+  const pageTitle = "Match Highlights";
 
   return (
     <main className="flex flex-col items-center min-h-screen">
