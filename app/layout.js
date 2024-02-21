@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/Navbar";
+// import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ScoreCard from '@/components/ScoreCard';
 import { Providers } from "./Providers";
@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
         <Providers>     
          {/* <ScoreCardApi /> */}
           <ScoreCard />
-          <Navbar />
+          {/* <Navbar /> */}
           <Navi />
           {children}
           <Footer />
