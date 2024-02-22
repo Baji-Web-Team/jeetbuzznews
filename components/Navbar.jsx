@@ -18,7 +18,7 @@ const FlipNavWrapper = () => {
 const FlipNav = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="bg-zinc-800 p-2 flex items-center justify-between relative">
+    <nav className="bg-zinc-800 p-2 flex items-center justify-between relative z-50">
       <NavLeft setIsOpen={setIsOpen} />
       <NavRight />
       <NavMenu isOpen={isOpen} />
