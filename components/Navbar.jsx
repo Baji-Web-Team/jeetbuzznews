@@ -1,94 +1,157 @@
 "use client";
-import ThemeSwitch from "@/components/ThemeSwitch";
 import Link from "next/link";
-import Image from "next/image";
+import { motion } from "framer-motion";
 import { useState } from "react";
+import { FiMenu, FiArrowRight } from "react-icons/fi";
+import ThemeSwitch from "./ThemeSwitch";
+import { menuLinkVariants, menuLinkArrowVariants } from "@/utils/variants";
+import Image from "next/image";
 
-const Navbar = () => {
-  const [dropdownOpen, setDropdownOpen] = useState(false);
-
-  const toggleDropdown = () => {
-    setDropdownOpen(!dropdownOpen);
-  };
-
+const FlipNavWrapper = () => {
   return (
-    <header className="bg-zinc-800 text-white body-font">
-      <div className="container mx-auto flex flex-wrap p-1 items-center">
-        <div className="flex justify-between items-center w-full">
-          {/* Hamburger Icon */}
-          <button
-            className="text-white focus:outline-none md:hidden"
-            onClick={toggleDropdown}
-          >
-            {dropdownOpen ? (
-              <span className="text-2xl" onClick={toggleDropdown}>
-                &#10006;
-              </span>
-            ) : (
-              <span className="text-2xl">&#9776;</span>
-            )}
-          </button>
-          {/* Logo */}
-          <Link href="/" className="flex items-center">
-            <Image src="/jeetbuzzlogo.png" alt="logo" width={131} height={36} />
-          </Link>
-          {/* Navigation Links */}
-          <nav className={`md:flex md:items-center md:justify-end ${dropdownOpen ? "block" : "hidden"} w-full md:w-auto`}>
-            <Link
-              href="/"
-              className="text-white text-sm hover-effect md:mx-3 my-1 md:my-0"
-            >
-              Home
-            </Link>
-            <Link
-              href="/predictions"
-              className="text-white text-sm hover-effect md:mx-3 my-1 md:my-0"
-            >
-              Predictions
-            </Link>
-            <Link
-              href="/videos"
-              className="text-white text-sm hover-effect md:mx-3 my-1 md:my-0"
-            >
-              Videos
-            </Link>
-            <Link
-              href="/matchhighlights"
-              className="text-white text-sm hover-effect md:mx-3 my-1 md:my-0"
-            >
-              Match Highlights
-            </Link>
-            <Link
-              href="/livescore"
-              className="text-white text-sm hover-effect md:mx-3 my-1 md:my-0"
-            >
-              Live Score
-            </Link>
-            <Link
-              href="/livestream"
-              className="text-white text-sm hover-effect md:mx-3 my-1 md:my-0"
-            >
-              Live Stream
-            </Link>
-            <Link
-              href="/blog"
-              className="text-white text-sm hover-effect md:mx-3 my-1 md:my-0"
-            >
-              Blog
-            </Link>
-          </nav>
-          {/* Theme Switch and Additional Buttons */}
-          <div className="flex justify-end items-center w-full md:w-auto">
-            <ThemeSwitch />
-            <button className="inline-flex items-center bg-gray-800 border-0 py-1 px-3 focus:outline-none hover:bg-gray-500 rounded text-sm mt-4 md:mt-0 md:ml-3">
-              Search
-            </button>
-            {/* Add your language picker here */}
-          </div>
-        </div>
-      </div>
-    </header>
+    <div className="bg-zinc-800 items-center justify-center xl:px-40 lg:px-20 md:px-10">
+        <FlipNav />
+    </div>
   );
 };
 
-export default Navbar;
+const FlipNav = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  return (
+    <nav className="bg-zinc-800 p-2 flex items-center justify-between relative">
+      <NavLeft setIsOpen={setIsOpen} />
+      <NavRight />
+      <NavMenu isOpen={isOpen} />
+    </nav>
+  );
+};
+
+const Logo = () => {
+  return <Image src="/jeetbuzzlogo.png" alt="logo" width={173} height={80} />;
+};
+
+const NavLink = ({ text, path }) => {
+  return (
+    <Link href={path} passHref>
+      <motion.div
+        as="a"
+        className="hidden lg:block h-[30px] overflow-hidden font-medium"
+      >
+        <motion.div whileHover={{ y: -30 }}>
+          <span className="flex items-center h-[30px] text-gray-500">
+            {text}
+          </span>
+          <span className="flex items-center h-[30px] text-orange1">
+            {text}
+          </span>
+        </motion.div>
+      </motion.div>
+    </Link>
+  );
+};
+
+const NavLeft = ({ setIsOpen }) => {
+  return (
+    <div className="flex items-center gap-6">
+      <motion.button
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className="block lg:hidden text-gray-950 text-2xl"
+        onClick={() => setIsOpen((pv) => !pv)}
+      >
+        <FiMenu />
+      </motion.button>
+      <Logo />
+      <NavLink text="Home" path="/" />
+      <NavLink text="Predictions" path="/predictions" />
+      <NavLink text="Videos" path="/videos" />
+      <NavLink text="Match Highlights" path="/matchhighlights" />
+      <NavLink text="Live Score" path="/livescore" />
+      <NavLink text="Live Stream" path="/livestream" />
+      <NavLink text="Blog" path="/blog" />
+    </div>
+  );
+};
+
+const NavRight = () => {
+  return (
+    <div className="flex items-center gap-4">
+      <motion.button
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className="px-4 py-2text-gray-200 dark:text-gray-200 bg-clip-text text-transparent font-medium rounded-md whitespace-nowrap"
+      >
+        <ThemeSwitch />
+      </motion.button>
+      <motion.button
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className="px-4 py-2 text-gray-200 dark:text-gray-200 font-medium rounded-md whitespace-nowrap"
+      >
+        Search
+      </motion.button>
+    </div>
+  );
+};
+
+const NavMenu = ({ isOpen }) => {
+  return (
+    <motion.div
+      variants={menuVariants}
+      initial="closed"
+      animate={isOpen ? "open" : "closed"}
+      className="absolute p-4 bg-white dark:bg-zinc-800 shadow-lg left-0 right-0 top-full origin-top flex flex-col gap-4"
+    >
+      <MenuLink text="Home" path="/" />
+      <MenuLink text="Predictions" path="/predictions" />
+      <MenuLink text="Videos" path="/videos" />
+      <MenuLink text="Match Highlights" path="/matchhighlights" />
+      <MenuLink text="Live Score" path="/livescore" />
+      <MenuLink text="Live Stream" path="/livestream" />
+      <MenuLink text="Blog" path="/blog" />
+    </motion.div>
+  );
+};
+
+const MenuLink = ({ text, path }) => {
+  return (
+    <Link href={path} passHref>
+      <motion.div
+        as="a"
+        variants={menuLinkVariants}
+        className="h-[30px] overflow-hidden font-medium text-lg flex items-start gap-2"
+      >
+        <motion.span variants={menuLinkArrowVariants}>
+          <FiArrowRight className="h-[30px] text-gray-950 dark:text-gray-200" />
+        </motion.span>
+        <motion.div whileHover={{ y: -30 }}>
+          <span className="flex items-center h-[30px] text-gray-500 dark:text-gray-200">
+            {text}
+          </span>
+          <span className="flex items-center h-[30px] text-orange1">
+            {text}
+          </span>
+        </motion.div>
+      </motion.div>
+    </Link>
+  );
+};
+
+export default FlipNavWrapper;
+
+const menuVariants = {
+  open: {
+    scaleY: 1,
+    transition: {
+      when: "beforeChildren",
+      staggerChildren: 0.1,
+    },
+  },
+  closed: {
+    scaleY: 0,
+    transition: {
+      when: "afterChildren",
+      staggerChildren: 0.1,
+    },
+  },
+};
