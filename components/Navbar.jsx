@@ -38,7 +38,7 @@ const NavLink = ({ text, path }) => {
         className="hidden lg:block h-[30px] overflow-hidden font-medium"
       >
         <motion.div whileHover={{ y: -30 }}>
-          <span className="flex items-center h-[30px] text-gray-500">
+          <span className="flex items-center h-[30px] text-gray-200">
             {text}
           </span>
           <span className="flex items-center h-[30px] text-orange1">
@@ -56,7 +56,7 @@ const NavLeft = ({ setIsOpen }) => {
       <motion.button
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="block lg:hidden text-gray-950 text-2xl"
+        className="block lg:hidden text-gray-200 text-2xl"
         onClick={() => setIsOpen((pv) => !pv)}
       >
         <FiMenu />
@@ -79,7 +79,7 @@ const NavRight = () => {
       <motion.button
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="px-4 py-2text-gray-200 dark:text-gray-200 bg-clip-text text-transparent font-medium rounded-md whitespace-nowrap"
+        className="px-4 py-2 bg-clip-text text-gray-200 dark:text-gray-200 font-medium rounded-md whitespace-nowrap"
       >
         <ThemeSwitch />
       </motion.button>
@@ -125,7 +125,7 @@ const MenuLink = ({ text, path }) => {
           <FiArrowRight className="h-[30px] text-gray-950 dark:text-gray-200" />
         </motion.span>
         <motion.div whileHover={{ y: -30 }}>
-          <span className="flex items-center h-[30px] text-gray-500 dark:text-gray-200">
+          <span className="flex items-center h-[30px] text-gray-600 dark:text-gray-200">
             {text}
           </span>
           <span className="flex items-center h-[30px] text-orange1">
