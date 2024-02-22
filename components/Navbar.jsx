@@ -124,7 +124,10 @@ const MenuLink = ({ text, path }) => {
         <motion.span variants={menuLinkArrowVariants}>
           <FiArrowRight className="h-[30px] text-gray-950 dark:text-gray-200" />
         </motion.span>
-        <motion.div whileHover={{ y: -30 }}>
+        <motion.div 
+        whileHover={{ y: -30 }}
+        whileTap={{ y: -30 }}
+        >
           <span className="flex items-center h-[30px] text-gray-600 dark:text-gray-200">
             {text}
           </span>
