@@ -3,7 +3,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { FiMenu, FiArrowRight } from "react-icons/fi";
-import ThemeSwitch from "./ThemeSwitch";
+import ThemeSwitch from "../ThemeSwitch";
 import { menuLinkVariants, menuLinkArrowVariants } from "@/utils/variants";
 import Image from "next/image";
 
