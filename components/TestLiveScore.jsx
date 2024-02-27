@@ -17,7 +17,7 @@ const SliderWidget = () => {
         where_to: "whereUwantToPutOnlyIdslider_widget",
         base_path: "https://jeetbuzznews.vercel.app/matches",
         links: "1",
-        color_type: "light","dark",
+        color_type: "light",
         choosed_color: "",
         choosed_preset: "",
       });
