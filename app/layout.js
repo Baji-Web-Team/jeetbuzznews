@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
         <Providers>     
           {/* <ScoreCard /> */}
-          <LiveScore />
+          <div className="mx-auto my-4"><LiveScore /></div>
           <Navbar />
           {children}
           <Footer />
