@@ -2,13 +2,13 @@
 import React, { useEffect, useState } from 'react';
 
 const SliderWidget = () => {
-  const [isLightMode, setIsLightMode] = useState(true); // Assuming light mode as default
+  const [colorType, setColorType] = useState('light');
 
   useEffect(() => {
     // Function to handle theme change
     const handleThemeChange = () => {
       const themeMode = localStorage.getItem('theme');
-      setIsLightMode(themeMode !== 'dark');
+      setColorType(themeMode === 'dark' ? 'dark' : 'light');
     };
 
     // Initial call to set the theme
@@ -39,7 +39,7 @@ const SliderWidget = () => {
       where_to: "whereUwantToPutOnlyIdslider_widget",
       base_path: "https://jeetbuzznews.vercel.app/matches",
       links: "1",
-      color_type: isLightMode ? "light" : "dark",
+      color_type: colorType,
       choosed_color: "",
       choosed_preset: "",
     };
@@ -57,7 +57,7 @@ const SliderWidget = () => {
     return () => {
       script.remove();
     };
-  }, [isLightMode]);
+  }, [colorType]);
 
   return <div id="whereUwantToPutOnlyIdslider_widget" />;
 };
