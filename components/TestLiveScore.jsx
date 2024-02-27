@@ -51,7 +51,7 @@ const SliderWidget = () => {
         id: "73748",
         more_one: "",
         widget_size: "large",
-        where_to: "entity_widget",
+        where_to: "whereUwantToPutOnlyIdslider_widget",
         base_path: "https://jeetbuzznews.vercel.app/matches",
         links: "1",
         color_type: "light",
@@ -61,7 +61,7 @@ const SliderWidget = () => {
     `
 
     script.innerHTML = isLightMode ? light : dark ;
-    document.getElementById('entity_widget').appendChild(script);
+    document.getElementById('whereUwantToPutOnlyIdslider_widget').appendChild(script);
 
     // Clean up function to remove the script when the component unmounts
     // return () => {
@@ -69,7 +69,7 @@ const SliderWidget = () => {
     // };
   }, []); // Empty dependency array ensures this effect runs only once
 
-  return <div id="entity_widget" />;
+  return <div id="whereUwantToPutOnlyIdslider_widget" />;
 };
 
 export default SliderWidget;
