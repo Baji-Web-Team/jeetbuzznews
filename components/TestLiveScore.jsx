@@ -18,9 +18,7 @@ const SliderWidget = () => {
     setInterval(() => {
       getTheme()
     }, 1000)
-  }, [])
 
-  useEffect(() => {
     // Execute the script to initialize the widget
     const script = document.createElement('script');
 
