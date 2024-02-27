@@ -51,7 +51,7 @@ const SliderWidget = () => {
         id: "73748",
         more_one: "",
         widget_size: "large",
-        where_to: "whereUwantToPutOnlyIdslider_widget",
+        where_to: "entity_widget",
         base_path: "https://jeetbuzznews.vercel.app/matches",
         links: "1",
         color_type: "light",
