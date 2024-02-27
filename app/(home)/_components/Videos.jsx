@@ -26,8 +26,9 @@ const Videos = () => {
 
         <div className="grid gap-6 lg:grid-cols-2 xl:gap-x-12">
           {/* Map through the cardData array and render Cards component for each item */}
-          {cardDataVid.map((data) => (
+          {cardDataVid.map((data, idx) => (
             <Cards
+              key={idx}
               data={data}
             />
           ))}

@@ -1,7 +1,27 @@
 "use client"
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const SliderWidget = () => {
+  const [ isLightMode, setIsLightMode ] = useState(false)
+
+  const getTheme = () => {
+    const themeMode = localStorage.getItem('theme')
+
+    if(themeMode === 'dark') {
+      setIsLightMode(false)
+    } else {
+      setIsLightMode(true)
+    }
+  }
+
+  useEffect(() => {
+    setInterval(() => {
+      getTheme()
+    }, 1000)
+  }, [])
+
+  console.log({isLightMode})
+
   useEffect(() => {
     // Execute the script to initialize the widget
     const script = document.createElement('script');
@@ -17,12 +37,12 @@ const SliderWidget = () => {
         where_to: "whereUwantToPutOnlyIdslider_widget",
         base_path: "https://jeetbuzznews.vercel.app/matches",
         links: "1",
-        color_type: "dark",
+        color_type: ${!isLightMode ? "dark" : "light"},
         choosed_color: "",
         choosed_preset: "",
       });
     `;
-    document.getElementById('whereUwantToPutOnlyIdslider_widget').appendChild(script);
+    document.getElementById('whereUwantToPutOnlyIdslider_widget')?.appendChild(script);
 
     // Clean up function to remove the script when the component unmounts
     return () => {

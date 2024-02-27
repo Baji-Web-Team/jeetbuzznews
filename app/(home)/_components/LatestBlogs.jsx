@@ -29,14 +29,16 @@ const LatestBlogs = () => {
 
         <div className="grid gap-6 lg:grid-cols-3 xl:gap-x-12">
           {/* Map through the cardData array and render Cards component for each item */}
-          {cardBlogs.map((data) => (
+          {cardBlogs.map((data, idx) => (
             <Cards
               data={data}
+              key={idx}
             />
           ))}
           <div className="self-stretch">
-          {blogsLatest.map((data) => (
+          {blogsLatest.map((data, idx) => (
             <BlogsCont
+              key={idx}
               data={data}
             />
           ))}

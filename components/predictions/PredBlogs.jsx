@@ -11,13 +11,13 @@ const PredBlogs = () => {
         </div>
         <div className="border-b-[3px] mb-6 border-linebreak " />
         <div className="w-full flex">
-          {predSingle.map((data) => (
-            <Cards02 data={data} />
+          {predSingle.map((data, idx) => (
+            <Cards02 data={data} key={idx} />
           ))}
         </div>
         <div className="grid gap-6 lg:grid-cols-3 xl:gap-x-12">
-          {predAll.map((data) => (
-            <Cards02 data={data} />
+          {predAll.map((data, idx) => (
+            <Cards02 data={data} key={idx} />
           ))}
         </div>
       </div>

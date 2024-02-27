@@ -6,8 +6,8 @@ const ScoreCard = () => {
     <div className="w-full dark:bg-[#121212] bg-scorebg">
       <div className="container p-8 mx-auto ">
         <div className="grid gap-6 lg:grid-cols-5 xl:gap-x-4">
-          {scoreCard.map((data) => (
-            <HeaderScore data={data} />
+          {scoreCard.map((data, idx) => (
+            <HeaderScore data={data} key={idx}/>
           ))}
         </div>
       </div>

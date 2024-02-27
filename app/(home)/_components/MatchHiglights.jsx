@@ -26,8 +26,9 @@ const MatchHiglights = () => {
 
         <div className="grid gap-6 lg:grid-cols-4 xl:gap-x-12">
           {/* Map through the cardData array and render Cards component for each item */}
-          {cardDataMatch.map((data) => (
+          {cardDataMatch.map((data, idx) => (
             <Cards
+              key={idx}
               data={data}
             />
           ))}
