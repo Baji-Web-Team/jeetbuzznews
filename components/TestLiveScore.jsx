@@ -67,7 +67,7 @@ const SliderWidget = () => {
     // return () => {
     //   document.getElementById('whereUwantToPutOnlyIdslider_widget').removeChild(script);
     // };
-  }, []); // Empty dependency array ensures this effect runs only once
+  }, [isLightMode]); // Empty dependency array ensures this effect runs only once
 
   return <div id="whereUwantToPutOnlyIdslider_widget" />;
 };
