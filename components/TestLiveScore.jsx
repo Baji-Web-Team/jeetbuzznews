@@ -1,71 +1,63 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from 'react';
 
 const SliderWidget = () => {
-  const [ isLightMode, setIsLightMode ] = useState(false)
-
-  const getTheme = () => {
-    const themeMode = localStorage.getItem('theme')
-
-    if(themeMode === 'dark') {
-      setIsLightMode(false)
-    } else {
-      setIsLightMode(true)
-    }
-  }
+  const [isLightMode, setIsLightMode] = useState(true); // Assuming light mode as default
 
   useEffect(() => {
-    setInterval(() => {
-      getTheme()
-    }, 1000)
+    // Function to handle theme change
+    const handleThemeChange = () => {
+      const themeMode = localStorage.getItem('theme');
+      setIsLightMode(themeMode !== 'dark');
+    };
 
+    // Initial call to set the theme
+    handleThemeChange();
+
+    // Listen for theme changes
+    window.addEventListener('storage', handleThemeChange);
+
+    // Clean up the event listener when component unmounts
+    return () => {
+      window.removeEventListener('storage', handleThemeChange);
+    };
+  }, []);
+
+  useEffect(() => {
     // Execute the script to initialize the widget
     const script = document.createElement('script');
+    script.id = 'slider_widget_script';
 
-    const dark = `
-      Entity_sport.push({
-        code: "4654436544",
-        field: "entity_cricket",
-        widget_type: "content_type",
-        widget: "slider_widget",
-        id: "73748",
-        more_one: "",
-        widget_size: "large",
-        where_to: "whereUwantToPutOnlyIdslider_widget",
-        base_path: "https://jeetbuzznews.vercel.app/matches",
-        links: "1",
-        color_type: "dark",
-        choosed_color: "",
-        choosed_preset: "",
-      });
-    `
+    const widgetConfig = {
+      code: "4654436544",
+      field: "entity_cricket",
+      widget_type: "content_type",
+      widget: "slider_widget",
+      id: "73748",
+      more_one: "",
+      widget_size: "large",
+      where_to: "whereUwantToPutOnlyIdslider_widget",
+      base_path: "https://jeetbuzznews.vercel.app/matches",
+      links: "1",
+      color_type: isLightMode ? "light" : "dark",
+      choosed_color: "",
+      choosed_preset: "",
+    };
 
-    const light = `
-      Entity_sport.push({
-        code: "4654436544",
-        field: "entity_cricket",
-        widget_type: "content_type",
-        widget: "slider_widget",
-        id: "73748",
-        more_one: "",
-        widget_size: "large",
-        where_to: "whereUwantToPutOnlyIdslider_widget",
-        base_path: "https://jeetbuzznews.vercel.app/matches",
-        links: "1",
-        color_type: "light",
-        choosed_color: "",
-        choosed_preset: "",
-      });
-    `
+    script.innerHTML = `Entity_sport.push(${JSON.stringify(widgetConfig)});`;
 
-    script.innerHTML = isLightMode ? light : dark ;
+    const existingScript = document.getElementById('slider_widget_script');
+    if (existingScript) {
+      existingScript.remove();
+    }
+
     document.getElementById('whereUwantToPutOnlyIdslider_widget').appendChild(script);
 
     // Clean up function to remove the script when the component unmounts
-    // return () => {
-    //   document.getElementById('whereUwantToPutOnlyIdslider_widget').removeChild(script);
-    // };
-  }, [isLightMode]); // Empty dependency array ensures this effect runs only once
+    return () => {
+      script.remove();
+    };
+  }, [isLightMode]);
 
   return <div id="whereUwantToPutOnlyIdslider_widget" />;
 };
