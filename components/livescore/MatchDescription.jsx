@@ -1,7 +1,7 @@
 "use client"
 import React, { useEffect } from 'react';
 
-const FixturesWidget = () => {
+const MatchDescription = () => {
   useEffect(() => {
     // Execute the script to initialize the widget
     const script = document.createElement('script');
@@ -41,4 +41,4 @@ const FixturesWidget = () => {
   return <div id="whereUwantToPutOnlyIdfixtures" />;
 };
 
-export default FixturesWidget;
+export default MatchDescription;
