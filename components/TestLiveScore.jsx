@@ -31,7 +31,7 @@ const SliderWidget = () => {
     const widgetConfig = {
       code: "4654436544",
       field: "entity_cricket",
-      widget_type: "content_type",
+      widget_type: "url",
       widget: "slider_widget",
       id: "73748",
       more_one: "",
