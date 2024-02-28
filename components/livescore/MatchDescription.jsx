@@ -10,7 +10,7 @@ const MatchDescription = () => {
     const widgetConfig = {
       code: "4654436544",
       field: "entity_cricket",
-      widget_type: "content_type",
+      widget_type: "url",
       widget: "fixtures",
       id: "73867",
       more_one: "bowling_top_wicket_takers",
