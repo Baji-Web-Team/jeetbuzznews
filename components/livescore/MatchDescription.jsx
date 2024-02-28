@@ -16,7 +16,7 @@ const MatchDescription = () => {
       more_one: "bowling_top_wicket_takers",
       widget_size: "large",
       where_to: "whereUwantToPutOnlyIdfixtures",
-      base_path: "https://jeetbuzznews.vercel.app/livescore",
+      base_path: "https://jeetbuzznews.vercel.app/",
       links: "1",
       color_type: "light",
       choosed_color: "",
