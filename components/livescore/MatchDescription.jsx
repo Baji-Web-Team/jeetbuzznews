@@ -17,7 +17,7 @@ const MatchDescription = () => {
       widget_size: "large",
       where_to: "whereUwantToPutOnlyIdfixtures",
       base_path: "/livescore/[match]",
-      links: "1",
+      links: "0",
       color_type: "light",
       choosed_color: "",
       choosed_preset: "",
