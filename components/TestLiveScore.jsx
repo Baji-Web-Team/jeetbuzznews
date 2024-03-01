@@ -37,7 +37,7 @@ const SliderWidget = () => {
       more_one: "",
       widget_size: "large",
       where_to: "whereUwantToPutOnlyIdslider_widget",
-      base_path: "https://jeetbuzznews.vercel.app/matches",
+      base_path: "https://jeetbuzznews.vercel.app/livescore",
       links: "1",
       color_type: colorType,
       choosed_color: "",
