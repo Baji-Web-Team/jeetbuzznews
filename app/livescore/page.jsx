@@ -1,5 +1,5 @@
 import React from 'react'
-import MatchDetails from '@/app/livescore/matches'
+import MatchDetails from '@/components/livescore/section66'
 import AddDetails from '@/components/livescore/section33'
 
 const page = () => {
