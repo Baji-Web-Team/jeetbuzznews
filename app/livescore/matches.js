@@ -42,9 +42,6 @@ const SliderWidget = () => {
         color_type: "light",
         choosed_color: "",
         choosed_preset: "",
-
-     
-        
     };
 
     script.innerHTML = `Entity_sport.push(${JSON.stringify(widgetConfig)});`;
