@@ -1,5 +1,5 @@
 import React from 'react'
-import Details from "@/app/livescore/matches"
+import Details from "@/components/livescore/matches"
 
 const section66 = () => {
   return (
