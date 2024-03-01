@@ -1,10 +1,9 @@
 import React from 'react'
-import LiveScore from '@/components/TestLiveScore'
 
-export default function page() {
+const page = ({params}) => {
   return (
-    <div>
-      <LiveScore />
-    </div>
+    <div>{params.match}</div>
   )
 }
+
+export default page
