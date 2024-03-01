@@ -1,9 +1,7 @@
-"use client"
+"use client";
 import React, { useEffect, useState } from 'react';
-import { useRouter } from 'next/router';
 
 const SliderWidget = () => {
-  const router = useRouter();
   const [colorType, setColorType] = useState('light');
 
   useEffect(() => {
@@ -61,18 +59,7 @@ const SliderWidget = () => {
     };
   }, [colorType]);
 
-  // Function to handle click event on match details
-  const handleMatchDetailsClick = (matchId) => {
-    // Navigate to the dynamic route for match details
-    router.push(`/livescore/${matchId}`);
-  };
-
-  return (
-    <div id="whereUwantToPutOnlyIdslider_widget">
-      {/* Your widget content */}
-      <button onClick={() => handleMatchDetailsClick("exampleMatchId")}>View Match Details</button>
-    </div>
-  );
+  return <div id="whereUwantToPutOnlyIdslider_widget" />;
 };
 
 export default SliderWidget;
