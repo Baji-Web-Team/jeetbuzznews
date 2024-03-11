@@ -31,7 +31,7 @@ const LiveScoreFixture = () => {
     const widgetConfig = {
       code: "4654436544",
       field: "entity_cricket",
-      widget_type: "content_type",
+      widget_type: "url",
       widget: "fixtures",
       id: "72774",
       more_one: "",
