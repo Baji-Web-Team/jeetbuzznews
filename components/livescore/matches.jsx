@@ -37,7 +37,7 @@ const SliderWidget = () => {
         more_one: "",
         widget_size: "large",
         where_to: "whereUwantToPutOnlyIdmatch_center",
-        base_path: "",
+        base_path: "/livescore",
         links: "0",
         color_type: "light",
         choosed_color: "",
