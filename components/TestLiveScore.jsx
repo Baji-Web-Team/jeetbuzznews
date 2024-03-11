@@ -37,7 +37,7 @@ const SliderWidget = () => {
       more_one: "",
       widget_size: "large",
       where_to: "whereUwantToPutOnlyIdslider_widget",
-      base_path: "#",
+      base_path: "/",
       links: "1",
       color_type: colorType,
       choosed_color: "",
