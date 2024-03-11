@@ -37,7 +37,7 @@ const MatchesWidget = () => {
       more_one: "",
       widget_size: "large",
       where_to: "whereUwantToPutOnlyIdmatch_center",
-      base_path: "/livescore",
+      base_path: "/livescore/any",
       links: "0",
       color_type: colorType,
       choosed_color: "",
