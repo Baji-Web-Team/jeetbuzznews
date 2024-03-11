@@ -26,7 +26,7 @@ const LiveScoreFixture = () => {
   useEffect(() => {
     // Execute the script to initialize the widget
     const script = document.createElement('script');
-    script.id = 'matches_widget_script';
+    script.id = 'fixtures_widget_script';
 
     const widgetConfig = {
       code: "4654436544",
@@ -46,12 +46,12 @@ const LiveScoreFixture = () => {
 
     script.innerHTML = `Entity_sport.push(${JSON.stringify(widgetConfig)});`;
 
-    const existingScript = document.getElementById('matches_widget_script');
+    const existingScript = document.getElementById('fixtures_widget_script');
     if (existingScript) {
       existingScript.remove();
     }
 
-    document.getElementById('whereUwantToPutOnlyIdmatch_center').appendChild(script);
+    document.getElementById('whereUwantToPutOnlyIdfixtures').appendChild(script);
 
     // Clean up function to remove the script when the component unmounts
     return () => {
