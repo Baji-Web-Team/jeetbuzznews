@@ -45,6 +45,7 @@ const MatchesWidget = () => {
     };
 
     script.innerHTML = `Entity_sport.push(${JSON.stringify(widgetConfig)});`;
+    script.defer = true; // Add the defer attribute
 
     const existingScript = document.getElementById('matches_widget_script');
     if (existingScript) {

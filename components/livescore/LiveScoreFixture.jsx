@@ -31,7 +31,7 @@ const LiveScoreFixture = () => {
     const widgetConfig = {
       code: "4654436544",
       field: "entity_cricket",
-      widget_type: "url",
+      widget_type: "content_type",
       widget: "fixtures",
       id: "72774",
       more_one: "",
@@ -45,6 +45,7 @@ const LiveScoreFixture = () => {
     };
 
     script.innerHTML = `Entity_sport.push(${JSON.stringify(widgetConfig)});`;
+    script.defer = true; // Add the defer attribute
 
     const existingScript = document.getElementById('fixtures_widget_script');
     if (existingScript) {

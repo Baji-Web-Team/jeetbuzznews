@@ -31,7 +31,7 @@ const SliderWidget = () => {
     const widgetConfig = {
       code: "4654436544",
       field: "entity_cricket",
-      widget_type: "url",
+      widget_type: "content_type",
       widget: "slider_widget",
       id: "73748",
       more_one: "",
@@ -42,9 +42,11 @@ const SliderWidget = () => {
       color_type: colorType,
       choosed_color: "",
       choosed_preset: "",
+
     };
 
     script.innerHTML = `Entity_sport.push(${JSON.stringify(widgetConfig)});`;
+    script.defer = true; // Add the defer attribute
 
     const existingScript = document.getElementById('slider_widget_script');
     if (existingScript) {
