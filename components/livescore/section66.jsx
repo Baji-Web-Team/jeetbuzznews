@@ -1,5 +1,5 @@
 import React from 'react'
-import Details from "@/components/livescore/MatchesWidget"
+import Details from "@/components/livescore/LiveScoreFixture"
 
 const section66 = () => {
   return (
