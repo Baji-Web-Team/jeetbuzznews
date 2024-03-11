@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 
-const SliderWidget = () => {
+const Matches = () => {
   const [colorType, setColorType] = useState('light');
 
   useEffect(() => {
@@ -59,7 +59,7 @@ const SliderWidget = () => {
     };
   }, [colorType]);
 
-  return <div id="whereUwantToPutOnlyIdslider_widget" />;
+  return <div id="whereUwantToPutOnlyIdmatch_center" />;
 };
 
-export default SliderWidget;
+export default Matches;
