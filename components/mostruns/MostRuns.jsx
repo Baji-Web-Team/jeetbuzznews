@@ -39,7 +39,7 @@ const SeriesTopPagesRuns = () => {
         where_to: "whereUwantToPutOnlyIdseries_top_pages",
         base_path: "#",
         links: "0",
-        color_type: "colorType",
+        color_type: colorType,
         choosed_color: "",
         choosed_preset: "",
     };
