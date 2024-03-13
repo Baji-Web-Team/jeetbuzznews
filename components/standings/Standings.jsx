@@ -38,7 +38,7 @@ const TeamStandings = () => {
       widget_size: "medium",
       where_to: "whereUwantToPutOnlyIdcompetetion_standings",
       base_path: "",
-      links: "0",
+      links: "",
       color_type: "light",
       choosed_color: "",
       choosed_preset: "",
@@ -65,7 +65,7 @@ const TeamStandings = () => {
   return (
     <div
       id="whereUwantToPutOnlyIdcompetetion_standings"
-      className="p-2.5 flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative overflow-hidden"
+      className="p-2.5 flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative overflow-hidden w-full"
     />
   );
 };

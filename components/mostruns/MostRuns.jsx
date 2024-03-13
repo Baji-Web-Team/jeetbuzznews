@@ -38,7 +38,7 @@ const SeriesTopPagesRuns = () => {
         widget_size: "large",
         where_to: "whereUwantToPutOnlyIdseries_top_pages",
         base_path: "",
-        links: "0",
+        links: "",
         color_type: colorType,
         choosed_color: "",
         choosed_preset: "",
@@ -60,7 +60,7 @@ const SeriesTopPagesRuns = () => {
     };
   }, [colorType]);
 
-  return <div id="whereUwantToPutOnlyIdseries_top_pages" className='p-2.5 flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative overflow-hidden'/>;
+  return <div id="whereUwantToPutOnlyIdseries_top_pages" className="p-2.5 flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative overflow-hidden w-full"/>;
 };
 
 export default SeriesTopPagesRuns;
