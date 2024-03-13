@@ -1,5 +1,6 @@
 import React from "react";
 import MostRuns from "@/components/mostruns/MostRuns"
+import TeamStandings from "./standings/Standings";
 
 const SideScore = () => {
   return (
@@ -13,7 +14,7 @@ const SideScore = () => {
           </div>
           <div className="p-2.5 flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative overflow-hidden">
             <div className="rounded border-solid border-[#ffffff] border p-2.5 flex flex-row items-center justify-between self-stretch shrink-0 h-11 relative overflow-hidden">
-              <div className="text-[#ffffff] text-left font-['Poppins-Regular',_sans-serif] text-xs leading-8 font-normal relative">
+              {/* <div className="text-[#ffffff] text-left font-['Poppins-Regular',_sans-serif] text-xs leading-8 font-normal relative">
                 Select League
               </div>
               <svg
@@ -41,7 +42,8 @@ const SideScore = () => {
                     fill="white"
                   />
                 </g>
-              </svg>
+              </svg> */}
+              <TeamStandings />
             </div>
           </div>
           <div className="flex flex-row gap-0 items-start justify-start self-stretch shrink-0 relative">
