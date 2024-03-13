@@ -46,7 +46,7 @@ const SideScore = () => {
             </div> */}
             <TeamStandings />
           </div>
-          <div className="flex flex-row gap-0 items-start justify-start self-stretch shrink-0 relative">
+          {/* <div className="flex flex-row gap-0 items-start justify-start self-stretch shrink-0 relative">
             <div className="flex flex-col gap-0 items-center justify-start shrink-0 relative">
               <div className="bg-neutral1 p-2.5 flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative overflow-hidden">
                 <div className="text-[#ffffff] text-left font-['Poppins-SemiBold',_sans-serif] text-sm leading-8 font-semibold relative">
@@ -278,7 +278,7 @@ const SideScore = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         <div className="bg-[#ffffff] rounded flex flex-col gap-0 items-start justify-start self-stretch shrink-0 relative overflow-hidden shadow-md">
           <div className="bg-[#20201f] flex flex-col gap-0 items-start justify-start self-stretch shrink-0 relative overflow-hidden">
