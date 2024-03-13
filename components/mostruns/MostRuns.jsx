@@ -26,7 +26,7 @@ const SeriesTopPagesRuns = () => {
   useEffect(() => {
     // Execute the script to initialize the widget
     const script = document.createElement('script');
-    script.id = 'series_top_pages';
+    script.id = 'series_top_pages_script';
 
     const widgetConfig = {
         code: "4654436544",
@@ -47,7 +47,7 @@ const SeriesTopPagesRuns = () => {
     script.innerHTML = `Entity_sport.push(${JSON.stringify(widgetConfig)});`;
     script.defer = true; // Add the defer attribute
 
-    const existingScript = document.getElementById('series_top_pages');
+    const existingScript = document.getElementById('series_top_pages_script');
     if (existingScript) {
       existingScript.remove();
     }
