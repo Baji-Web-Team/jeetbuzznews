@@ -37,8 +37,8 @@ const LiveScoreFixture = () => {
       more_one: "",
       widget_size: "large",
       where_to: "whereUwantToPutOnlyIdfixtures",
-      base_path: "/livescore",
-      links: "0",
+      base_path: "",
+      links: "",
       color_type: colorType,
       choosed_color: "",
       choosed_preset: "",
@@ -60,7 +60,7 @@ const LiveScoreFixture = () => {
     };
   }, [colorType]);
 
-  return <div id="whereUwantToPutOnlyIdfixtures" />;
+  return <div id="whereUwantToPutOnlyIdfixtures" className="!p-2.5 !flex !flex-col !gap-2.5 !justify-start !self-stretch !shrink-0 !relative !overflow-hidden !w-full !items-center"/>;
 };
 
 export default LiveScoreFixture;
