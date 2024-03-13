@@ -1,4 +1,5 @@
 import React from "react";
+import MostRuns from "@/components/mostruns/MostRuns"
 
 const SideScore = () => {
   return (
@@ -284,7 +285,7 @@ const SideScore = () => {
                 Most Runs
               </div>
             </div>
-            <div className="p-2.5 flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative overflow-hidden">
+            {/* <div className="p-2.5 flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative overflow-hidden">
               <div className="rounded border-solid border-[#ffffff] border p-2.5 flex flex-row items-center justify-between self-stretch shrink-0 h-11 relative overflow-hidden">
                 <div className="text-[#ffffff] text-left font-['Poppins-Regular',_sans-serif] text-xs leading-8 font-normal relative">
                   Select League
@@ -777,7 +778,8 @@ const SideScore = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
+            <MostRuns />
           </div>
         </div>
         <img
