@@ -9,8 +9,8 @@ const Page = () => {
 
   return (
     <main className="flex flex-col items-center min-h-screen">
-      <div className="container flex flex-col  mx-auto mt-12">
-        <div className="flex xl:flex-row md:flex-col flex-col items-center xl:gap-x-12 p-6">
+      <div className="container flex flex-col mx-auto mt-12">
+        <div className="flex xl:flex-row md:flex-col flex-col  xl:gap-x-12 p-6">
           <BlogSection singleData={predSingle} allData={predAll} title={pageTitle} />
           <Scores />
         </div>
