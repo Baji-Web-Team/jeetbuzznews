@@ -26,7 +26,7 @@ const SeriesTopPagesRuns = () => {
   useEffect(() => {
     // Execute the script to initialize the widget
     const script = document.createElement('script');
-    script.id = 'fixtures_widget_script';
+    script.id = 'series_top_pages';
 
     const widgetConfig = {
         code: "4654436544",
@@ -39,7 +39,7 @@ const SeriesTopPagesRuns = () => {
         where_to: "whereUwantToPutOnlyIdseries_top_pages",
         base_path: "#",
         links: "0",
-        color_type: "light",
+        color_type: "colorType",
         choosed_color: "",
         choosed_preset: "",
     };
@@ -47,7 +47,7 @@ const SeriesTopPagesRuns = () => {
     script.innerHTML = `Entity_sport.push(${JSON.stringify(widgetConfig)});`;
     script.defer = true; // Add the defer attribute
 
-    const existingScript = document.getElementById('fixtures_widget_script');
+    const existingScript = document.getElementById('series_top_pages');
     if (existingScript) {
       existingScript.remove();
     }
