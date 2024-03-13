@@ -37,7 +37,7 @@ const SeriesTopPagesRuns = () => {
         more_one: "team_total_run100",
         widget_size: "large",
         where_to: "whereUwantToPutOnlyIdseries_top_pages",
-        base_path: "#",
+        base_path: "",
         links: "0",
         color_type: colorType,
         choosed_color: "",
