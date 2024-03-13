@@ -35,7 +35,7 @@ const TeamStandings = () => {
       widget: "competetion_standings",
       id: "128410",
       more_one: "batting_most_runs",
-      widget_size: "medium",
+      widget_size: "small",
       where_to: "whereUwantToPutOnlyIdcompetetion_standings",
       base_path: "",
       links: "",
