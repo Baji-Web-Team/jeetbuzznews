@@ -65,7 +65,7 @@ const TeamStandings = () => {
   return (
     <div
       id="whereUwantToPutOnlyIdcompetetion_standings"
-      className="p-2.5 flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative overflow-hidden w-full"
+      className="!p-2.5 !flex !flex-col !gap-2.5 !justify-start !self-stretch !shrink-0 !relative !overflow-hidden !w-full !items-center"
     />
   );
 };
