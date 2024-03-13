@@ -11,10 +11,9 @@ const SideScore = () => {
             <div className="text-[#ffffff] text-left font-['Poppins-SemiBold',_sans-serif] text-base leading-8 font-semibold relative">
               Standings
             </div>
-            <TeamStandings />
-          {/* </div>
+          </div>
           <div className="p-2.5 flex flex-col gap-2.5 items-start justify-start self-stretch shrink-0 relative overflow-hidden">
-            <div className="rounded border-solid border-[#ffffff] border p-2.5 flex flex-row items-center justify-between self-stretch shrink-0 h-11 relative overflow-hidden">
+            {/* <div className="rounded border-solid border-[#ffffff] border p-2.5 flex flex-row items-center justify-between self-stretch shrink-0 h-11 relative overflow-hidden">
               <div className="text-[#ffffff] text-left font-['Poppins-Regular',_sans-serif] text-xs leading-8 font-normal relative">
                 Select League
               </div>
@@ -44,8 +43,8 @@ const SideScore = () => {
                   />
                 </g>
               </svg>
-              
-            </div>
+            </div> */}
+            <TeamStandings />
           </div>
           <div className="flex flex-row gap-0 items-start justify-start self-stretch shrink-0 relative">
             <div className="flex flex-col gap-0 items-center justify-start shrink-0 relative">
@@ -279,7 +278,7 @@ const SideScore = () => {
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
         <div className="bg-[#ffffff] rounded flex flex-col gap-0 items-start justify-start self-stretch shrink-0 relative overflow-hidden shadow-md">
           <div className="bg-[#20201f] flex flex-col gap-0 items-start justify-start self-stretch shrink-0 relative overflow-hidden">
