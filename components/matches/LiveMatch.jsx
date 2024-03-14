@@ -31,7 +31,7 @@ const LiveMatch = ({ searchParams }) => {
     const widgetConfig = {
       code: "4654436544",
       field: "entity_cricket",
-      widget_type: "content_type",
+      widget_type: "url",
       widget: "match_center",
       id: searchParams?.id || '73531',
       more_one: "",
