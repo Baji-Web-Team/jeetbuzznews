@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 
-const LiveScoreFixture = () => {
+const LiveScoreFixture = ({searchParams}) => {
   const [colorType, setColorType] = useState('light');
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const LiveScoreFixture = () => {
       field: "entity_cricket",
       widget_type: "content_type",
       widget: "fixtures",
-      id: "72774",
+      id: searchParams?.id || '72774',
       more_one: "",
       widget_size: "large",
       where_to: "whereUwantToPutOnlyIdfixtures",
