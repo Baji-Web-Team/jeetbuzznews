@@ -63,7 +63,7 @@ const LiveMatch = () => {
   }, [colorType]);
 
   return (
-    <div id="whereUwantToPutOnlyIdmatch_center" className="widget-aside" />
+    <div id="whereUwantToPutOnlyIdmatch_center" className="!w-full !flex !flex-col" />
   );
 };
 
