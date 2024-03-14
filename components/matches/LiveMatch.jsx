@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
-const LiveMatch = () => {
+const LiveMatch = ({ searchParams }) => {
   const [colorType, setColorType] = useState("light");
 
   useEffect(() => {
@@ -33,7 +33,7 @@ const LiveMatch = () => {
       field: "entity_cricket",
       widget_type: "content_type",
       widget: "match_center",
-      id: "73531",
+      id: searchParams?.id || '73531',
       more_one: "",
       widget_size: "large",
       where_to: "whereUwantToPutOnlyIdmatch_center",
