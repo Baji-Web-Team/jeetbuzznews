@@ -60,7 +60,7 @@ const SeriesTopPagesRuns = () => {
     };
   }, [colorType]);
 
-  return <div id="whereUwantToPutOnlyIdseries_top_pages" className=" !p-2.5 !flex !flex-col !gap-2.5 !justify-start !self-stretch !shrink-0 !relative !overflow-hidden !w-full !items-center"/>;
+  return <div id="whereUwantToPutOnlyIdseries_top_pages" className="widget-aside"/>;
 };
 
 export default SeriesTopPagesRuns;
