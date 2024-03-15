@@ -63,7 +63,7 @@ const TeamStandings = () => {
   }, [colorType]);
 
   return (
-    <div
+    <section
       id="whereUwantToPutOnlyIdcompetetion_standings"
       className="widget-aside"
     />

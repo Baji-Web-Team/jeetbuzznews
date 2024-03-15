@@ -63,7 +63,7 @@ const LiveMatch = ({ searchParams }) => {
   }, [colorType]);
 
   return (
-    <div id="whereUwantToPutOnlyIdmatch_center" className="!w-full !flex !flex-col" />
+    <section id="whereUwantToPutOnlyIdmatch_center" className="!w-full !flex !flex-col" />
   );
 };
 

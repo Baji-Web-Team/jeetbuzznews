@@ -60,7 +60,7 @@ const LiveScoreFixture = ({searchParams}) => {
     };
   }, [colorType]);
 
-  return <div id="whereUwantToPutOnlyIdfixtures" className="!p-2.5 !flex !flex-col !gap-2.5 !justify-start !self-stretch !shrink-0 !relative !overflow-hidden !w-full !items-center"/>;
+  return <section id="whereUwantToPutOnlyIdfixtures" className="!p-2.5 !flex !flex-col !gap-2.5 !justify-start !self-stretch !shrink-0 !relative !overflow-hidden !w-full !items-center"/>;
 };
 
 export default LiveScoreFixture;

@@ -60,7 +60,7 @@ const SeriesTopPagesRuns = () => {
     };
   }, [colorType]);
 
-  return <div id="whereUwantToPutOnlyIdseries_top_pages" className="widget-aside"/>;
+  return <section id="whereUwantToPutOnlyIdseries_top_pages" className="widget-aside"/>;
 };
 
 export default SeriesTopPagesRuns;

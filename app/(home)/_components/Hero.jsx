@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div class="px-6 py-12 text-center md:px-12 lg:my-12 lg:text-left">
+    <section class="px-6 py-12 text-center md:px-12 lg:my-12 lg:text-left">
       <div class="w-100 mx-auto sm:max-w-2xl md:max-w-3xl lg:max-w-5xl xl:max-w-7xl">
         <div class="grid items-center gap-12 lg:grid-cols-2">
           <div class="mt-12 lg:mt-0">
@@ -38,7 +38,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

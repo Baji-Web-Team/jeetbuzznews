@@ -2,7 +2,7 @@ import React from 'react'
 
 const section33 = () => {
     return (
-        <div className='basis-1/3 flex flex-col'>
+        <section className='basis-1/3 flex flex-col'>
             <div className='flex flex-col gap-6 items-start justify-start shrink-0 relative'>
 
                 
@@ -15,7 +15,7 @@ const section33 = () => {
                     src="/ads/ads02.png"
                 />
             </div>
-        </div>
+        </section>
     )
 }
 

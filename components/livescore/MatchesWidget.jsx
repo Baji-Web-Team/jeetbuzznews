@@ -60,7 +60,7 @@ const MatchesWidget = () => {
     };
   }, [colorType]);
 
-  return <div id="whereUwantToPutOnlyIdmatch_center" />;
+  return <section id="whereUwantToPutOnlyIdmatch_center" />;
 };
 
 export default MatchesWidget;

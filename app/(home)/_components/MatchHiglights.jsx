@@ -6,8 +6,8 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const MatchHiglights = () => {
   return (
-    <div className="container mt-12 mx-auto px-6">
-      <section className="mb-32 text-center">
+    <section className="container mt-12 mx-auto px-6">
+      <div className="mb-32 text-center">
         <div className="w-full relative flex flex-col items-start justify-start gap-[12px] mb-6">
           <div className="flex flex-row items-center justify-start gap-[24px]">
             <h2 className="relative leading-[32px] font-semibold text-3xl">
@@ -33,8 +33,8 @@ const MatchHiglights = () => {
             />
           ))}
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   )
 }
 
