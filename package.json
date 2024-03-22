@@ -12,6 +12,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "fontawesome": "^5.6.3",
     "framer-motion": "^11.0.5",
     "next": "14.0.4",
     "next-themes": "^0.2.1",

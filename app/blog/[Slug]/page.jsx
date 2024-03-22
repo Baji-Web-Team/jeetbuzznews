@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import BlogSection from "@/components/dyna66";
 import Scores from "@/components/SideScore";
 import WideAds from "@/components/WideAds";
-
+git pull
 const Page = ({ params }) => {
   const pageTitle = "Blogs"; // Set the title dynamically based on the page
 
